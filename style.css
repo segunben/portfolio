@@ -510,7 +510,6 @@ section.services .container .service{
     cursor: dafault;
     transition: var(--transition);
 }
-
 section.services .container .service:hover{
     box-shadow: 0 3rem 3rem var(--color-primary-light);
 }
@@ -530,7 +529,7 @@ section.services .container .service span{
 
 section.services .container .service:nth-child(2) span{
     background: var(--color-warning);
-    margin-top: -4rem;
+    
 }
 
 /* RECENT WORK (PORTFOLIO) */
@@ -556,6 +555,8 @@ section.recent-work .projects{
 section.recent-work .projects .project{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    
     gap: 1rem;
    
     
@@ -973,7 +974,7 @@ footer .copyright {
 
      section.recent-work .projects .project{
         margin-bottom: 4rem;
-        margin-left: 2rem;
+        
         
      }
 

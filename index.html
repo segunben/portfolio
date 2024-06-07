@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal PortFolio</title>
+    <!-- MATERIAL ICONS CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <!-- ICONSCOUT CDN -->
+     <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">      
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/solid.css"> 
+    <!-- MONTSERRAT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- swiper JS -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" class="logo"><img src="images/logo.jpg" alt="logo" ></a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id = "menu-btn"><!--<i class="uil uil-bars"></i>--><i class="material-icons">menu</i></button>
+            <button id = "close-btn"><!--<i class="uil uil-times"></i>--><i class="material-icons">close</i></button>
+        </div>
+    </nav>
+
+    <!-- LANDING SECTION -->
+
+    <section class="landing">
+        <div class="container">
+            
+            <div class="socials">
+               <a href="https:>//facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="facebook-f"><path fill="#1C1D1F" d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z"></path></svg></a> 
+                <a href="https:>//github.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="github"><path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"></path></svg></a>
+                <a href="https:>//freecodecamp.org" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M97.2 96.2c10.4-10.7 16-17.1 16-21.9 0-2.8-1.9-5.5-3.8-7.4A14.8 14.8 0 0 0 101 64.1c-8.5 0-20.9 8.8-35.8 25.7C23.7 137 2.5 182.8 3.4 250.3s17.5 117 54.1 161.9C76.2 435.9 90.6 448 100.9 448a13.6 13.6 0 0 0 8.4-3.8c1.9-2.8 3.8-5.6 3.8-8.4 0-5.6-3.9-12.2-13.2-20.6-44.5-42.3-67.3-97-67.5-165C32.3 188.8 54 137.8 97.2 96.2zM239.5 420.1c.6 .4 .9 .6 .9 .6zm93.8 .6 .2-.1C333.2 420.6 333.2 420.7 333.3 420.6zm3.1-158.2c-16.2-4.2 50.4-82.9-68.1-177.2 0 0 15.5 49.4-62.8 159.6-74.3 104.4 23.5 168.7 34 175.2-6.7-4.4-47.4-35.7 9.6-128.6 11-18.3 25.5-34.9 43.5-72.2 0 0 15.9 22.5 7.6 71.1C287.7 364 354 342.9 355 343.9c22.8 26.8-17.7 73.5-21.6 76.6 5.5-3.7 117.7-78 33-188.1C360.4 238.4 352.6 266.6 336.4 262.4zM510.9 89.7C496 72.8 483.5 64 475 64a14.8 14.8 0 0 0 -8.4 2.8c-1.9 1.9-3.8 4.7-3.8 7.4 0 4.8 5.6 11.3 16 21.9 43.2 41.6 65 92.6 64.8 154.1-.2 68-23 122.6-67.5 165-9.3 8.4-13.2 14.9-13.2 20.6 0 2.8 1.9 5.6 3.8 8.4A13.6 13.6 0 0 0 475.1 448c10.3 0 24.7-12.1 43.5-35.8 36.6-44.9 53.1-94.4 54.1-161.9S552.3 137 510.9 89.7z"/></svg></a> 
+                                                                   
+            </div>
+            <div class="info">
+                <h1>Fullstack Web Developer</h1>
+                <h3>Hi, I am Segun Benjamin</h3>
+                <p>Welcome to my portfolio! I'm a passionate web developer with a love for creating dynamic, responsive, and user-friendly websites.  On this site, you can explore some of my latest projects, experiments, and accomplishments in the world of web development. Take a look around, and let's connect if you'd like to collaborate or learn more about my work!"
+                </p>
+                
+
+                <a href="#contact" class="btn btn-primary">Contact</a>
+            </div>
+
+            <div class="profile-area">
+                <div class="outer-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m352-522 86-87-56-57-44 44-56-56 43-44-45-45-87 87 159 158Zm328 329 87-87-45-45-44 43-56-56 43-44-57-56-86 86 158 159Zm24-567 57 57-57-57ZM290-120H120v-170l175-175L80-680l200-200 216 216 151-152q12-12 27-18t31-6q16 0 31 6t27 18l53 54q12 12 18 27t6 31q0 16-6 30.5T816-647L665-495l215 215L680-80 465-295 290-120Zm-90-80h56l392-391-57-57-391 392v56Zm420-419-29-29 57 57-28-28Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M300-720q-25 0-42.5 17.5T240-660q0 25 17.5 42.5T300-600q25 0 42.5-17.5T360-660q0-25-17.5-42.5T300-720Zm0 400q-25 0-42.5 17.5T240-260q0 25 17.5 42.5T300-200q25 0 42.5-17.5T360-260q0-25-17.5-42.5T300-320ZM160-840h640q17 0 28.5 11.5T840-800v280q0 17-11.5 28.5T800-480H160q-17 0-28.5-11.5T120-520v-280q0-17 11.5-28.5T160-840Zm40 80v200h560v-200H200Zm-40 320h640q17 0 28.5 11.5T840-400v280q0 17-11.5 28.5T800-80H160q-17 0-28.5-11.5T120-120v-280q0-17 11.5-28.5T160-440Zm40 80v200h560v-200H200Zm0-400v200-200Zm0 400v200-200Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"/></svg>
+                </div>
+                <div class="inner-circle">
+                    <img src="images/profile.JPG">
+                </div>
+            
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about" id="about">
+        <h1>About</h1>
+        <div class="container">
+            <div class="image-wrapper">
+                <img src="images/profile.JPG" >
+            </div>
+            <div class="info">
+                <p>As a web developer, I'm driven by a passion for creating efficient and scalable digital experiences. With several years of hands-on experience and with a keen eye for detail, I specialize in building dynamic, responsive, and user-friendly websites. 
+                </p>
+                <p>My journey in web development started with a curiosity about how websites are built and a desire to create things that could be shared with the world. Over the years, I have honed my skills in both front-end and back-end technologies, working with HTML, CSS, JavaScript, React, Node.js, and various other tools and frameworks.</p>
+                
+                <div class="read-more-content">
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, playing music and facilitating training sessions.
+                    </p>
+                    <p>I'm excited to share my work with you, and I look forward to the opportunity to collaborate on future projects!</p>
+                </div>
+                <a class="read-more">Show more</a>
+                <a href="" download class="btn btn-primary"><i class="uil uil-download-alt"></i>Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+        <h1>Skills</h1>
+        <div class="container">
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg> 
+                        <h4>Frontend Development</h4>
+                    </div>
+                    <div class="right">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <h5>HTML</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>90%</h5>
+                        </div>
+                    </div>
+                    <!-- END OF ITEM -->
+                    <div class="item">
+                        <h5>CSS</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>80%</h5>
+                        </div>
+                    </div>
+                    <!-- END OF ITEM -->
+                    <div class="item">
+                        <h5>Javascript</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>70%</h5>
+                        </div>
+                    </div>
+                    <!-- END OF ITEM -->
+                    <div class="item">
+                        <h5>React</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>50%</h5>
+                        </div>
+                    </div>
+                    <!-- END OF ITEM -->
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg> 
+                        <h4>Backend Development</h4>
+                    </div>
+                    <div class="right">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <h5>Node</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>80%</h5>
+                        </div>
+                    </div>
+                    <!-- END OF ITEM -->
+                    <div class="item">
+                        <h5>Python</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>70%</h5>
+                        </div>
+                    </div>
+                    <!-- END OF ITEM -->
+                    <div class="item">
+                        <h5>PHP</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>70%</h5>
+                        </div>
+                    </div>
+                    <!-- END OF ITEM -->
+                    <div class="item">
+                        <h5>MySQL</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>50%</h5>
+                        </div>
+                    </div>
+                    <!-- END OF ITEM -->
+                    <div class="item">
+                        <h5>Mongo DB</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>50%</h5>
+                        </div>
+                    </div>
+                    <!-- END OF ITEM -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+        <h1>Services</h1>
+        <div class="container">
+            
+            <div class="service">
+                <span><i class="uil uil-globe"></i></span>
+                <h3>Websites &  Web app Development</h3>
+                <p>I craft dynamic, responsive, and user-friendly websites that drive engagement and conversion. My web development services include:  Building custom websites from scratch;
+                    Designing and implementing e-commerce solutions;
+                    Developing interactive web applications;
+                    Optimizing website performance and speed;
+                    Ensuring cross-browser and device compatibility.
+                    </p>
+            </div>
+            <div class="service">
+                <span><i class="uil uil-meeting-board"></i></span>
+                <h3>Training</h3>
+                <p>Empower your team with the skills they need to succeed. My training services include: Customized workshops and training sessions; Web development boot camps; Mentorship programmes; Online course creation and Change Management.
+                    
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="recent-work " id="portfolio">
+        <div class="container">
+            <h4>My Recent Work</h4>
+            <h1>Here Is My Most Recent Solo Project</h1>
+            <div class="projects">
+                <div class="project">
+                    <div class="thumbnail">
+                        <img src="images/work2.JPG" alt="Baking website Homepage"> 
+                    </div>
+                    <h2>Complete Responsive E-Commerce Website</h2>
+                    <p>Sweet and modern website design for a bakery, featuring a responsive layout, enticing visuals, and easy navigation. </p>
+                    <div class="action">
+                        <a href="https://github.com" target="blank">Github</a>
+                        <a href="#">Live Demo</a>
+                    </div>
+                </div>
+                <!-- END OF PROJECT -->
+
+                <div class="project">
+                    <div class="thumbnail">
+                        <img src="images/work.PNG" alt="Baking website Homepage"> 
+                    </div>
+                    
+                    <p>A tailored mobile experience for the bakery website, ensuring a seamless and delicious journey for on-the-go users. This mobile version features: Responsive design for a smooth user experience
+                        Optimized layout for smaller screens;
+                        Easy navigation and quick access to sweet treats
+                        </p>
+                    <div class="action">
+                        <a href="https://github.com" target="blank">Github</a>
+                        <a href="#">Live Demo</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h1>Testimonials</h1>
+        <div class="container swiper">
+            <div class="carousel swiper-wrapper">
+                <div class="testimonial swiper-slide">
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="images/bammy.JPG" alt="My image">
+                            </div>
+                            <div class="info">
+                                <h4>Bammy</h4>
+                                <small>Enterprenure (bammy.com)</small>
+                            </div>
+                           
+                        </div>
+                        <div class="stars">
+                            <i class="uis uis-favorite"></i>
+                            <i class="uis uis-favorite"></i>
+                            <i class="uis uis-favorite"></i>
+                            <i class="uis uis-favorite"></i>
+                            <i class="uis uis-favorite"></i>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus sint ullam repellat aperiam. Deleniti labore molestias nisi? Beatae, quibusdam harum!
+    
+                    </p>
+                </div>
+                <!-- END OF TESTIMONIAL -->
+
+                <div class="testimonial swiper-slide">
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="images/yayi.JPG" alt="My image">
+                            </div>
+                            <div class="info">
+                                <h4>Yayi</h4>
+                                <small>Enterprenure (yayi.com)</small>
+                            </div>
+                            
+                        </div>
+                        <div class="stars">
+                            <i class="uis uis-favorite"></i>
+                            <i class="uis uis-favorite"></i>
+                            <i class="uis uis-favorite"></i>
+                            <i class="uis uis-favorite"></i>
+                            <i class="uis uis-favorite"></i>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus sint ullam repellat aperiam. Deleniti labore molestias nisi? Beatae, quibusdam harum!
+    
+                    </p>
+                </div>
+                <!-- END OF TESTIMONIAL -->
+
+                <div class="testimonial swiper-slide">
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="images/random.JPG" alt="My image">
+                            </div>
+                            <div class="info">
+                                <h4>Random</h4>
+                                <small>Enterprenure (random.com)</small>
+                            </div>
+                            
+                        </div>
+                        <div class="stars">
+                            <i class="uis uis-favorite"></i>
+                            <i class="uis uis-favorite"></i>
+                            <i class="uis uis-favorite"></i>
+                            <i class="uis uis-favorite"></i>
+                            <i class="uis uis-favorite"></i>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus sint ullam repellat aperiam. Deleniti labore molestias nisi? Beatae, quibusdam harum!
+    
+                    </p>
+                </div>
+                <!-- END OF TESTIMONIAL -->
+            </div>
+            <!-- swiper pagination -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="overlay">
+            <div class="container">
+                <h1>Let's Talk</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum maxime possimus, incidunt molestias dolorem eos labore esse impedit totam.</p>
+                <form action="https://formspree.io/f/mnqergej" method="POST">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="text" name="Email" placeholder="Email" required>
+                    <input type="text" name="Subject" placeholder="Subject" required>
+                    <textarea name="Message" placeholder="Message" required></textarea>
+                    <input type="submit" value="submit" class="btn btn-primary">
+                </form>
+    
+            </div>
+    
+        </div> 
+
+    </section>
+    <footer>
+        <div class="container">
+            <a href="#"><h3>Ben</h3></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="socials">
+                <a href="https:>//facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="facebook-f"><path fill="#1C1D1F" d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z"></path></svg></a> 
+                <a href="https:>//github.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="github"><path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"></path></svg></a>
+                <a href="https:>//freecodecamp.org" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M97.2 96.2c10.4-10.7 16-17.1 16-21.9 0-2.8-1.9-5.5-3.8-7.4A14.8 14.8 0 0 0 101 64.1c-8.5 0-20.9 8.8-35.8 25.7C23.7 137 2.5 182.8 3.4 250.3s17.5 117 54.1 161.9C76.2 435.9 90.6 448 100.9 448a13.6 13.6 0 0 0 8.4-3.8c1.9-2.8 3.8-5.6 3.8-8.4 0-5.6-3.9-12.2-13.2-20.6-44.5-42.3-67.3-97-67.5-165C32.3 188.8 54 137.8 97.2 96.2zM239.5 420.1c.6 .4 .9 .6 .9 .6zm93.8 .6 .2-.1C333.2 420.6 333.2 420.7 333.3 420.6zm3.1-158.2c-16.2-4.2 50.4-82.9-68.1-177.2 0 0 15.5 49.4-62.8 159.6-74.3 104.4 23.5 168.7 34 175.2-6.7-4.4-47.4-35.7 9.6-128.6 11-18.3 25.5-34.9 43.5-72.2 0 0 15.9 22.5 7.6 71.1C287.7 364 354 342.9 355 343.9c22.8 26.8-17.7 73.5-21.6 76.6 5.5-3.7 117.7-78 33-188.1C360.4 238.4 352.6 266.6 336.4 262.4zM510.9 89.7C496 72.8 483.5 64 475 64a14.8 14.8 0 0 0 -8.4 2.8c-1.9 1.9-3.8 4.7-3.8 7.4 0 4.8 5.6 11.3 16 21.9 43.2 41.6 65 92.6 64.8 154.1-.2 68-23 122.6-67.5 165-9.3 8.4-13.2 14.9-13.2 20.6 0 2.8 1.9 5.6 3.8 8.4A13.6 13.6 0 0 0 475.1 448c10.3 0 24.7-12.1 43.5-35.8 36.6-44.9 53.1-94.4 54.1-161.9S552.3 137 510.9 89.7z"/></svg></a> 
+                                                      
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy; SegunBenjamin 
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -932,11 +932,13 @@ footer .copyright {
     /* ABOUT SECTION */
 
     section.about .container {
+
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;;
         gap: 1rem;
         text-align: center;
+        
 
     }
 
